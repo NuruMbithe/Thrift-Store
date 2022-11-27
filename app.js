@@ -18,6 +18,7 @@ menu.addEventListener('click',function(){
     linksContainer.classList.toggle("show-links");
 })
 
+
 const navbar = document.getElementById("nav");
 // fixed navbar
 window.addEventListener('scroll', function(){
