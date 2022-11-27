@@ -12,6 +12,7 @@
     --white: white; 
     --purplish:#AA83A4;
    --purple: #e7630a;
+   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 * {
@@ -26,7 +27,8 @@
     background: white;
     padding: 1rem 1.5rem;
   }
- /* fixed nav */
+
+  /* fixed nav */
 .fixed-nav {
   position: fixed;
   top: 0;
@@ -144,8 +146,6 @@ transition: all 0.3s ease-out;
       color: var(--purple);
       transition: all 0.3s linear;
     }
-
-
     #sign-up {
       background-color: transparent;
       text-decoration: none;
@@ -157,14 +157,16 @@ transition: all 0.3s ease-out;
   }
   
   #sign-up:hover {
-      background-color: var(--purple);
-      color: var(white);
-      padding: 5px 15px;
-      border-radius: 4px;
-      border: solid 1px var(--purple);
-      transition: all 0.3s ease-out;
-  }
-  }
+    background-color: var(--purple);
+    padding: 5px 15px;
+    border-radius: 4px;
+    border: solid 1px var(--purple);
+    color: var(--white);
+    transition: all 0.3s ease-out; 
+}
+
+}
+   
 
 .nav-bar{
     display: grid;
