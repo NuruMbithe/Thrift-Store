@@ -26,6 +26,7 @@
  nav {
     background: white;
     padding: 1rem 1.5rem;
+    position: sticky;
   }
 
   /* fixed nav */
@@ -272,7 +273,7 @@ transition: all 0.3s ease-out;
 /* Header */
 header {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-  url('https://i.postimg.cc/rFX1KLGt/Header-Pic.jpg')center/cover no-repeat;
+  url('https://i.postimg.cc/VkzMsknv/pexels-d-ng-nh-n-3049731.jpg')center/cover no-repeat;
   min-height: 100vh; 
   text-align: center;
   color: #fff;
@@ -450,31 +451,32 @@ section#features div.desc {
 }
 
 /*-----Video-----*/
-.video-header{
-text-align: center;
+
+
+section {
+  min-height: 100vh;
 }
 
-.section-video.row {
-width: 70%;
+.video {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  
+  display: flex;
+  justify-content: center;
 }
 
-.videoWrapper {
-position: relative;
-padding-bottom: 50%;
-height: 0;
-overflow: hidden;
-margin: 30px 0;
+img {
+  padding: 10px;
 }
 
-.videoWrapper iframe {
-position: absolute;
-top: 0;
-left: 0;
-right: 0;
-margin: auto;
-width: 70%;
-height: 70%;
+@media (max-width: 768px) {
+  iframe {
+    height: 55vh;
+    width: 55vh;
+     
+   }
 }
+
 
 /*--------- Contact ------------*/
 .contact-header {
